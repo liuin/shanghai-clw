@@ -1,16 +1,16 @@
 /*-- Globals --*/
 body,html {height:100%;}
 ul {margin:0; padding:0; list-style-type:none;}
-body {font-size:12px; background:#f5f4f2;}
+body {font-size:12px; background:#fff;}
 a {  -webkit-transition:.15s; -o-transition: .15s;  transition: .15s;}
 .tran{-webkit-transition: all .5s ease-in-out 0s; -o-transition: all .5s ease-in-out 0s; -moz-transition: all .5s ease-in-out 0s; transition: all .5s ease-in-out 0s;}
-.w640{max-width:640px; margin:0 auto; width:100%;}
+.w640{min-width:320px; margin:0 auto; width:100%; box-sizing:border-box;}
 
 /*-- header --*/
-.header {text-align:center;padding-top:10px;}
+.header {text-align:left; padding:10px; border-bottom: 4px solid #3098f9;}
 .logo {text-align:center;}
-.logo img{max-width:486px;}
+.logo img{max-width:486px; width:100%;}
 
 /*-- meeting-page --*/
-.meeting-details-hd {font-weight:normal;}
+.meeting-details-hd {font-weight:normal;height: 140px; display: -webkit-box; -webkit-box-align: center; -webkit-box-pack: center;}
 
