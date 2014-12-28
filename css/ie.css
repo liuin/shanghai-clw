@@ -1,0 +1,8 @@
+/* ie.css */
+.container {
+}
+
+/*-- ie6 only --*/
+*html .open .dropdown-menu {
+}
+/*-- ie7 only --*/
