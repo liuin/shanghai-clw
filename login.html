@@ -9,40 +9,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>车联网 登陆页面</title>
 <link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/effect.css" />
 <link rel="stylesheet" href="css/style.css" />
 <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/Validform_v5.3.2.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body class="login-page yh">
   <header class="header w640">
     <a href="#" class="logo"><img  src="images/logo.png" width="100%" alt="车联网" /></a>
   </header>
-  <div class="login-box gl-box">
+  <div id="login-box" class="login-box fade gl-box">
     <h1 class="meeting-details-hd">欢迎登陆</h1>
-    <form action="#">
+    <form class="ckform" action="#">
       <div class="lg-ground-item">
         <label>邮箱</label>
-        <input type="email" class="tbox" name="" id="" />
+        <input type="email" datatype="e" class="tbox" name="" id="" />
       </div>
       <div class="lg-ground-item">
         <label>密码</label>
-        <input type="password" class="tbox" name="" id="" />
+        <input type="password" datatype="*6-16" class="tbox" name="" id="" />
       </div>
       <div class="lg-ground-item-ft lg-ground-item">
         <button type="submit" class="lg-bt button button-primary">登陆</button>
-        <a href="#" class="lg-fpsd">忘记密码</a>
+        <a href="#" class="lg-fpsd" id="lg-fpsd">忘记密码</a>
         <span>|</span>
         <a href="#" class="lg-reg">注册</a>
       </div>
     </form>
   </div><!-- /登陆 -->
 
-  <div class="fpsd-box gl-box">
+  <div id="fpsd-box" class="fpsd-box gl-box none fade">
     <h1 class="meeting-details-hd">忘记密码</h1>
-    <form action="#">
+    <form class="ckform" action="#">
       <div class="lg-ground-item">
         <label><p>请输入注册邮箱，我们会以邮件形式回复您。</p></label>
-        <input type="email" name="" class="tbox" id="" />
+        <input type="email" name="" datatype="e" class="tbox" id="" placeholder="请输入注册的邮箱" />
       </div>
       <div class="lg-ground-item">
         <label>验证码 :</label>
@@ -51,7 +53,7 @@
       </div>
       <div class="lg-ground-item-ft lg-ground-item">
         <button type="submit" class="lg-bt button button-primary">找回密码</button>
-        <a href="#" class="lg-fpsd">忘记密码</a>
+        <a href="#" class="lg-fpsd" id="bk-lg">登陆</a>
         <span>|</span>
         <a href="#" class="lg-reg">注册</a>
       </div>

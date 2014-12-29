@@ -9,8 +9,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>车联网 注册页面</title>
 <link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/effect.css" />
 <link rel="stylesheet" href="css/style.css" />
 <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/Validform_v5.3.2.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body class="reg-page yh">
@@ -19,39 +21,39 @@
   </header>
   <div class="reg-box">
     <div class="reg-box-nav clearfix">
-      <a href="#" class=" fl">个人会员</a>
-      <a href="#" class="current  fr">企业会员</a>
+      <a href="#" id="reg-box-per-link" class="current fl">个人会员</a>
+      <a href="#" id="reg-box-comp-link" class="fr">企业会员</a>
     </div>
     <div class="reg-box-tag gl-box">
-      <div class="rb-person none">
-        <form action="#">
+      <div class="rb-person fade">
+        <form class="ckform" action="#">
           <div class="lg-ground-item">
             <label>邮箱</label>
-            <input class="tbox" type="email" name="" id="" />
+            <input class="tbox" datatype="e" type="email" name="" id="" />
           </div>
           <div class="lg-ground-item">
             <label>密码 </label>
-            <input class="tbox" type="password" name="" id="" />
+            <input class="tbox" datatype="*6-16" name="userpasswordpr" type="password" name="" id="" />
           </div>
           <div class="lg-ground-item">
             <label>确认密码</label>
-            <input class="tbox" type="password" name="" id="" />
+            <input class="tbox" datatype="*" recheck="userpasswordpr" type="password" name="" id="" />
           </div>
           <div class="lg-ground-item">
             <label>姓名</label>
-            <input class="tbox" type="text" name="" id="" />
+            <input class="tbox"  datatype="*2-16" type="text" name="" id="" />
           </div>
           <div class="lg-ground-item">
             <label>单位</label>
-            <input class="tbox" type="text" name="" id="" />
+            <input class="tbox" datatype="*4-16" type="text" name="" id="" />
           </div>
           <div class="lg-ground-item">
             <label>职务</label>
-            <input class="tbox" type="text" name="" id="" />
+            <input class="tbox" datatype="*2-16" type="text" name="" id="" />
           </div>
           <div class="lg-ground-item">
             <label>联系电话</label>
-            <input class="tbox" type="number" name="" id="" />
+            <input class="tbox" datatype="n6-16" type="text" name="" id="" />
           </div>
           <div class="rb-person-item-ft rb-person-item">
             <button class="rb-person-bt button button-primary" type="submit">注册</button>
@@ -59,27 +61,27 @@
         </form>
       </div><!-- /个人会员 -->
 
-      <div class="rb-comp">
-        <form action="#">
+      <div class="rb-comp fade none">
+        <form class="ckform" action="#">
           <div class="lg-ground-item">
             <label>邮箱</label>
-            <input type="email" class="tbox" name="" id="" />
+            <input type="email" datatype="e" class="tbox" name="" id="" />
           </div>
           <div class="lg-ground-item">
             <label>密码 </label>
-            <input type="password" class="tbox" name="" id="" />
+            <input type="password" datatype="*6-16" name="userpasswordcom" class="tbox" name="" id="" />
           </div>
           <div class="lg-ground-item">
             <label>确认密码</label>
-            <input type="password" class="tbox" name="" id="" />
+            <input type="password"  datatype="*" recheck="userpasswordcom" class="tbox" name="" id="" />
           </div>
           <div class="lg-ground-item">
             <label>单位名称</label>
-            <input type="text" name="" class="tbox" id="" />
+            <input type="text" name="" datatype="*4-26" class="tbox" id="" />
           </div>
           <div class="lg-ground-item">
             <label>成立时间</label>
-            <input type="date" name="" class="tbox" id="" />
+            <input type="date" name="" datatype="*" class="tbox" id="" />
           </div>
           <div class="lg-ground-item">
             <label>联系地址</label>
@@ -87,43 +89,43 @@
           </div>
           <div class="lg-ground-item">
             <label>邮政编码</label>
-            <input type="number" name="" class="tbox" id="" />
+            <input type="number" name="" datatype="p" class="tbox" id="" />
           </div>
           <div class="lg-ground-item">
             <label>公司主页</label>
-            <input type="text" name="" class="tbox" id="" />
+            <input type="text" name="" datatype="*" class="tbox" id="" />
           </div>
           <div class="lg-ground-item">
             <label>法定代表人</label>
-            <input type="text" name="" class="tbox" id="" />
+            <input type="text" name="" datatype="*" class="tbox" id="" />
           </div>
           <div class="lg-ground-item">
             <label>主要联系人</label>
-            <input type="text" name="" class="tbox" id="" />
+            <input type="text" name="" datatype="*" class="tbox" id="" />
           </div>
           <div class="lg-ground-item">
             <label>联系电话</label>
-            <input type="text" name="" class="tbox" id="" />
+            <input type="text" name="" datatype="n6-16"  class="tbox" id="" />
           </div>
           <div class="lg-ground-item">
             <label>传真</label>
-            <input type="number" name="" class="tbox" id="" />
+            <input type="number" name="" datatype="n6-16" class="tbox" id="" />
           </div>
           <div class="lg-ground-item">
             <label>经营业务范围</label>
-            <input type="text" name="" class="tbox" id="" />
+            <input type="text" name="" datatype="*" class="tbox" id="" />
           </div>
           <div class="lg-ground-item">
             <label>单位性质</label>
-            <input type="text" name="" class="tbox" id="" />
+            <input type="text" name="" datatype="*" class="tbox" id="" />
           </div>
           <div class="lg-ground-item">
             <label>职工人数</label>
-            <input type="text" name="" class="tbox" id="" />
+            <input type="text" name="" datatype="*" class="tbox" id="" />
           </div>
           <div class="lg-ground-item">
             <label>备注</label>
-            <input type="text" name="" class="tbox" id="" />
+            <input type="text" name="" datatype="*4-126" class="tbox" id="" />
           </div>
           <div class="rb-person-item-ft rb-person-item">
             <button class="rb-person-bt button button-primary" type="submit">注册</button>
